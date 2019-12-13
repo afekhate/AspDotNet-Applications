@@ -1,0 +1,60 @@
+﻿@model CenturyCars.Domain.Entities.Car
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<p class="details-heading"> Car Details</p>
+
+<div class="Details-container">
+    <div>
+        <div class="left-side">
+            <img class="Image-Details" src="@Url.Content(@Model.ImagePath)" />
+
+        </div>
+        <div class="right-side">
+            
+            <p id="info-car">Manufacturer : @Model.Manufacturer.Name</p>
+            <p id="info-car">Car Model : @Model.Name</p>
+            <p id="info-car">Car Price : @Model.Price.ToString("c")</p>
+            <p id="info-car"> This Car is Rated  <span>@Model.Rating</span></p>
+        </div>
+    </div>
+</div>
+
+<div class="describe">
+    <p><span style="font-style : italic; color : black; font-weight :bold;">@Model.Manufacturer.Name @Model.Name</span>  @Model.Description</p>
+</div>
+
+<div class="ajax-flex">
+    <div id="update">
+        @Ajax.ActionLink("Receive Update!",
+            "Update",
+            null,
+        new AjaxOptions
+        {
+            UpdateTargetId = "update",
+            InsertionMode = InsertionMode.Replace,
+            HttpMethod = "GET"
+        },
+        new { @class = "btn btn-primary2" })
+    </div>
+
+
+    <div id="order">
+        @Ajax.ActionLink("Order For Car!",
+            "Order",
+            null,
+        new AjaxOptions
+        {
+            UpdateTargetId = "order",
+            InsertionMode = InsertionMode.Replace,
+            HttpMethod = "GET"
+        },
+        new { @class = "btn btn-primary2" })
+    </div>
+</div>
+
+
+

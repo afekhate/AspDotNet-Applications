@@ -1,0 +1,85 @@
+﻿@model IEnumerable<CenturyCars.Domain.Entities.Car>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage2.cshtml";
+}
+
+
+
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        @foreach (var item in Model)
+        {
+            <div class="photo-body">
+                <div class="photo-container">
+                    <div class="photo-container-inner">
+                        <p id="photo-head"> @item.Manufacturer.Name - @item.Name</p>
+                        <a href='@Url.Action("Details", "Home", new { id = item.CarID })'>
+                            <img class="Image" src="@Url.Content(@item.ImagePath)" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        }
+        </div>
+    </div>
+
+<p></p>
+<p></p>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Search Your Favourite Car Brand</div>
+    <div class="panel-body">
+        @using (Ajax.BeginForm("CarSearch", "Home",
+new AjaxOptions
+{
+    InsertionMode = InsertionMode.Replace,
+    HttpMethod = "GET",
+    OnFailure = "searchFailed",
+    LoadingElementId = "ajax-loader",
+    UpdateTargetId = "searchresults",
+}))
+        {
+            <input type="text" name="q" 
+                   style="height: 31px;
+                    border-radius: 17px;
+                    margin-right: 8px;
+                    padding: 6px;
+                   margin-bottom : 4px;"/>
+            <input type="submit" value="search" 
+                  style=" display: inline-block;
+ width : 76px;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid white;
+  border-radius: 26px;
+   color: #fff;
+  background-color: #000000;
+  border-color: #2e6da4;"/>
+            <img id="ajax-loader"
+                 src="@Url.Content("~/img/loader.gif")"
+                 style="display:none" />
+        }
+        <div id="searchresults"></div>
+    </div>
+</div>
+
+
+

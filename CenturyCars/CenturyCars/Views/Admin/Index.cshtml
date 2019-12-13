@@ -1,0 +1,66 @@
+﻿@model IEnumerable<CenturyCars.Domain.Entities.Car>
+
+@{
+    ViewBag.Title = "Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>Adminsite</h3>
+
+@*<p>
+    @Html.ActionLink("Create New", "Add", null, new { @class = "btn btn-primary" })
+</p>*@
+<table class="table table-striped table-condensed table-bordered">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Manufacturer.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rating)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>*@
+        <th>Actions</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Manufacturer.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Rating)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>*@
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.CarID }, new { @class = "btn3 btn-primary" }) |
+                @Html.ActionLink("Details", "Details", new { id = item.CarID }, new { @class = "btn3 btn-success" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.CarID }, new { @class = "btn3 btn-danger" })
+            </td>
+        </tr>
+    }
+
+   
+
+</table>
+ <div class="panel-footer text-center">
+        @Html.ActionLink("Add New Product", "Add", "null", new { @class = "btn btn-default" })
+    </div>
