@@ -1,0 +1,127 @@
+﻿@model SportsMarket.Domain.Entities.ShippingDetails
+
+@{
+    ViewBag.Title = "Checkout";
+}
+
+<h2>Checkout</h2>
+<p>Please enter your details then we will ship your goods to you</p>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    @Html.ValidationSummary("", new {@class ="text-danger" })
+    
+    <div class="form-horizontal">
+        <h4>ShippingDetails</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <h4>Address</h4>
+
+        @*this is a very powerful compressor for related properties or Fieldset*@
+
+        @foreach (var property in ViewData.ModelMetadata.Properties)
+        {
+            if(property.PropertyName != "Name" && property.PropertyName !="GiftWrap")
+            {
+                <div class="form-group col-md-2">
+                    <label>
+
+                        @(property.DisplayName ?? property.PropertyName)
+
+                    </label>
+
+                    @Html.TextBox(property.PropertyName, null, new { @class = "form-control"})
+
+                </div>
+            }
+        }
+
+        @*<div class="form-group">
+        @Html.LabelFor(model => model.Line1, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Line1, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Line1, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Line2, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Line2, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Line2, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Line3, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Line3, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Line3, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.City, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.City, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.state, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.state, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.state, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Zip, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Zip, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Zip, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Country, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Country, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Country, "", new { @class = "text-danger" })
+        </div>
+    </div>
+        *@
+
+ 
+       
+            <h3>Options</h3>
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.EditorFor(model => model.GiftWrap)
+                    Gift wrap these items
+                    @Html.ValidationMessageFor(model => model.GiftWrap, "", new { @class = "text-danger" })
+                </div>
+            </div>
+      
+
+        <div class="form-group">
+            <div class="text-center">
+                <input type="submit" value="Complete Order" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+
+

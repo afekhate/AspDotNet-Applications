@@ -1,0 +1,49 @@
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\bin\Debug\SportsMarket.Domain.dll.config
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\bin\Debug\SportsMarket.Domain.dll
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\bin\Debug\SportsMarket.Domain.pdb
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\bin\Debug\EntityFramework.dll
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\bin\Debug\EntityFramework.xml
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\obj\Debug\SportsMarket.Domain.Migrations.Initial.resources
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\obj\Debug\SportsMarket.Domain.csproj.GenerateResource.Cache
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\obj\Debug\SportsMarket.Domain.dll
+C:\Users\jubel\Documents\Visual Studio 2013\Projects\SportsMarket\SportsMarket.Domain\obj\Debug\SportsMarket.Domain.pdb
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\bin\Debug\SportsMarket.Domain.dll.config
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\bin\Debug\SportsMarket.Domain.dll
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\bin\Debug\SportsMarket.Domain.pdb
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\bin\Debug\EntityFramework.dll
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.Helpers.dll
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.Mvc.dll
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.Razor.dll
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.WebPages.dll
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\bin\Debug\EntityFramework.xml
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.Helpers.xml
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.Mvc.xml
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.Razor.xml
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.WebPages.xml
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\obj\Debug\SportsMarket.Domain.csprojResolveAssemblyReference.cache
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\obj\Debug\SportsMarket.Domain.Migrations.Initial.resources
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\obj\Debug\SportsMarket.Domain.csproj.GenerateResource.Cache
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\obj\Debug\SportsMarket.Domain.dll
+C:\Users\jubel\Desktop\DotNet Projects\SportsMarket\SportsMarket.Domain\obj\Debug\SportsMarket.Domain.pdb
